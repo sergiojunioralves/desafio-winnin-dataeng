@@ -1,9 +1,3 @@
-
----
-
-## 📂 `docs/data_contract_posts.json`
-
-```json
 {
   "table": "posts_creator",
   "columns": {
@@ -25,4 +19,3 @@
     }
   }
 }
-

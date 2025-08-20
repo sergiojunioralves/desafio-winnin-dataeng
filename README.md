@@ -35,13 +35,12 @@ O projeto está dividido em duas partes:
    - Quantidade de publicações por mês
    - **Extra 1:** meses sem posts preenchidos com `0`
    - **Extra 2:** pivot com `user_id` e meses como colunas
-   - 🔎 Incluímos `.show(5)` em cada resultado para facilitar a avaliação
 
 🔧 Extra:
 
 5. `5 - platinum_features`
    - Geração de features avançadas (`engajamento`, `CTR`, `score normalizado`)
-   - Cria tabela `default.platinum_features`
+   - Cria tabela `platinum.creators_features`
 
 6. `6 - data_quality_checks`
    - Checagem de **schema** (colunas obrigatórias e tipos)
@@ -54,8 +53,8 @@ O projeto está dividido em duas partes:
 
 📂 Estrutura de documentação:
 
-- `docs/arquitetura_pipeline.md`  
-  Explica o **fluxo de dados (Bronze → Silver → Gold → Platinum)** e inclui um **diagrama visual** com Prefect e monitoramento.
+****************- `docs/arquitetura_pipeline.md`  
+*****************  Explica o **fluxo de dados (Bronze → Silver → Gold → Platinum)** e inclui um **diagrama visual** com Prefect e monitoramento.
 
 - `docs/data_contract_posts.json`  
   Contrato de schema para os posts.

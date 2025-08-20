@@ -1,1 +1,28 @@
 
+---
+
+## 📂 `docs/data_contract_posts.json`
+
+```json
+{
+  "table": "posts_creator",
+  "columns": {
+    "creator_id": "STRING - Identificador único do criador",
+    "views": "LONG - Número de visualizações",
+    "likes": "LONG - Número de curtidas",
+    "title": "STRING - Título do post",
+    "published_at": "TIMESTAMP - Data/hora de publicação",
+    "tags": "ARRAY<STRING> - Lista de tags associadas",
+    "yt_user": "STRING - Usuário do YouTube associado"
+  },
+  "rules": {
+    "primary_key": ["creator_id", "published_at"],
+    "not_null": ["creator_id", "title", "published_at"],
+    "unique": ["creator_id", "title"],
+    "constraints": {
+      "views": ">= 0",
+      "likes": ">= 0"
+    }
+  }
+}
+
